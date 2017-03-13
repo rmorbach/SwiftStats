@@ -10,6 +10,18 @@ import UIKit
 
 public class SwiftStats: NSObject {
 
+    //Get max value
+    public static func max(_ data:  [Float])->Float?
+    {
+        return data.max()
+    }
+    
+    //Get min value
+    public static func min(_ data:  [Float])->Float?
+    {
+        return data.min()
+    }
+    
     //Sort values
     public static func sort(_ data: [Float])->[Float]
     {
