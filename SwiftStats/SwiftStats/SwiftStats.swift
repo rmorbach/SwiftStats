@@ -33,4 +33,22 @@ public class SwiftStats: NSObject {
         let sum = data.reduce(0, +)
         return sum/Float(data.count)
     }
+   
+    //MARK: referenca can be mean, median or mode
+    public static func deviations(_ data: [Float], from reference: Float)->[Float]
+    {
+        var deviations = [Float]();
+        for value in data
+        {
+            var v = (value - reference)
+            if v < 0
+            {
+                v = v * -1
+            }
+            deviations.append(v)
+        }
+        return deviations
+    }
+
+
 }

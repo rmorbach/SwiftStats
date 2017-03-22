@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E46FD291E81EBB3004187B5 /* MedianAbsoluteDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46FD281E81EBB3004187B5 /* MedianAbsoluteDeviation.swift */; };
+		5E46FD2B1E81EC60004187B5 /* AbsoluteAverageDeviation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46FD2A1E81EC60004187B5 /* AbsoluteAverageDeviation.swift */; };
+		5E46FD491E81F53B004187B5 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46FD481E81F53B004187B5 /* Moment.swift */; };
+		5E46FD571E81FA74004187B5 /* Kurtosis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46FD561E81FA74004187B5 /* Kurtosis.swift */; };
+		5E46FD591E81FACF004187B5 /* Skewness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E46FD581E81FACF004187B5 /* Skewness.swift */; };
 		5EA082011E75CE4400F48FC9 /* Variance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA082001E75CE4400F48FC9 /* Variance.swift */; };
 		5EA082031E75CF8200F48FC9 /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA082021E75CF8200F48FC9 /* Mode.swift */; };
 		5EA082051E75D4B600F48FC9 /* Median.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA082041E75D4B600F48FC9 /* Median.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E46FD281E81EBB3004187B5 /* MedianAbsoluteDeviation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedianAbsoluteDeviation.swift; sourceTree = "<group>"; };
+		5E46FD2A1E81EC60004187B5 /* AbsoluteAverageDeviation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbsoluteAverageDeviation.swift; sourceTree = "<group>"; };
+		5E46FD481E81F53B004187B5 /* Moment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		5E46FD561E81FA74004187B5 /* Kurtosis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kurtosis.swift; sourceTree = "<group>"; };
+		5E46FD581E81FACF004187B5 /* Skewness.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skewness.swift; sourceTree = "<group>"; };
 		5EA082001E75CE4400F48FC9 /* Variance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variance.swift; sourceTree = "<group>"; };
 		5EA082021E75CF8200F48FC9 /* Mode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		5EA082041E75D4B600F48FC9 /* Median.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Median.swift; sourceTree = "<group>"; };
@@ -66,6 +76,11 @@
 				5EA082021E75CF8200F48FC9 /* Mode.swift */,
 				5EA082041E75D4B600F48FC9 /* Median.swift */,
 				5EA082061E75D4FE00F48FC9 /* StandardDeviation.swift */,
+				5E46FD2A1E81EC60004187B5 /* AbsoluteAverageDeviation.swift */,
+				5E46FD281E81EBB3004187B5 /* MedianAbsoluteDeviation.swift */,
+				5E46FD481E81F53B004187B5 /* Moment.swift */,
+				5E46FD561E81FA74004187B5 /* Kurtosis.swift */,
+				5E46FD581E81FACF004187B5 /* Skewness.swift */,
 			);
 			path = SwiftStats;
 			sourceTree = "<group>";
@@ -152,11 +167,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA082011E75CE4400F48FC9 /* Variance.swift in Sources */,
+				5E46FD571E81FA74004187B5 /* Kurtosis.swift in Sources */,
 				5EA91DF21E75CB48005BC644 /* Percentile.swift in Sources */,
+				5E46FD591E81FACF004187B5 /* Skewness.swift in Sources */,
 				5EA082071E75D4FE00F48FC9 /* StandardDeviation.swift in Sources */,
 				5EA082031E75CF8200F48FC9 /* Mode.swift in Sources */,
 				5EA91DF01E75C959005BC644 /* SwiftStats.swift in Sources */,
 				5EA082051E75D4B600F48FC9 /* Median.swift in Sources */,
+				5E46FD2B1E81EC60004187B5 /* AbsoluteAverageDeviation.swift in Sources */,
+				5E46FD291E81EBB3004187B5 /* MedianAbsoluteDeviation.swift in Sources */,
+				5E46FD491E81F53B004187B5 /* Moment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

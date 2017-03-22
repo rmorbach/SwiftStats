@@ -125,7 +125,23 @@ SWIFT_CLASS("_TtC10SwiftStats10SwiftStats")
 @interface SwiftStats : NSObject
 + (NSArray<NSNumber *> * _Nonnull)sort:(NSArray<NSNumber *> * _Nonnull)data;
 + (float)average:(NSArray<NSNumber *> * _Nonnull)data;
++ (NSArray<NSNumber *> * _Nonnull)deviations:(NSArray<NSNumber *> * _Nonnull)data from:(float)reference;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
++ (float)MAD:(NSArray<NSNumber *> * _Nonnull)data;
+@end
+
+
+@interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
++ (float)variance:(NSArray<NSNumber *> * _Nonnull)data;
+@end
+
+
+@interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
++ (float)moment:(NSArray<NSNumber *> * _Nonnull)data order:(NSInteger)order;
 @end
 
 
@@ -144,12 +160,23 @@ SWIFT_CLASS("_TtC10SwiftStats10SwiftStats")
 
 
 @interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
++ (float)skewness:(NSArray<NSNumber *> * _Nonnull)data;
+@end
+
+
+@interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
 + (float)percentile:(NSArray<NSNumber *> * _Nonnull)data :(float)desiredPercentil;
 @end
 
 
 @interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
-+ (float)variance:(NSArray<NSNumber *> * _Nonnull)data;
++ (float)kurtosis:(NSArray<NSNumber *> * _Nonnull)data;
+@end
+
+
+@interface SwiftStats (SWIFT_EXTENSION(SwiftStats))
++ (float)AADFromMean:(NSArray<NSNumber *> * _Nonnull)data;
++ (float)AADFromMedian:(NSArray<NSNumber *> * _Nonnull)data;
 @end
 
 #pragma clang diagnostic pop
